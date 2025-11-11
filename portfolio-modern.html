@@ -1,20 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C303RXTZTS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-C303RXTZTS');
-</script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="DIoj1BzjCKNq7YtfQT7X_7E3MclbpPwfHvEQ_t_pCUQ" />
-    <title>Praveen Kumar Jayswal - Full Stack Developer & AI/ML Researcher</title>
-    
+    <meta name="description" content="Praveen Kumar Jayswal - Full Stack Developer, AI/ML Researcher, and Tech Enthusiast with expertise in Node.js, React, MongoDB, and Cloud Technologies. Based in Bhopal, India.">
+    <meta name="keywords" content="Full Stack Developer, AI/ML Researcher, Web Developer, Node.js, React, Express.js, MongoDB, MySQL, Praveen Kumar Jayswal, Bhopal">
+    <meta name="author" content="Praveen Kumar Jayswal">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph Meta Tags (Social Media Sharing) -->
+    <meta property="og:title" content="Praveen Kumar Jayswal - Full Stack Developer & AI/ML Researcher">
+    <meta property="og:description" content="Explore the portfolio of Praveen Kumar Jayswal, a skilled full-stack developer with expertise in building scalable web applications and AI/ML research.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/profile-image.jpg">
+    <meta property="og:site_name" content="Praveen Kumar Jayswal Portfolio">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Praveen Kumar Jayswal - Full Stack Developer & AI/ML Researcher">
+    <meta name="twitter:description" content="Explore the portfolio of Praveen Kumar Jayswal, a skilled full-stack developer.">
+    <meta name="twitter:image" content="https://yourdomain.com/profile-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com">
+
+    <!-- Structured Data (JSON-LD) for Rich Snippets -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Praveen Kumar Jayswal",
+            "jobTitle": "Full Stack Developer & AI/ML Researcher",
+            "url": "https://yourdomain.com",
+            "email": "praveenjayswal625@gmail.com",
+            "telephone": "+91-7801978844",
+            "address": {
+                "@type": "KATARWAR , BHADAURA, KUSHMI, SIDHI ,486669",
+                "addressLocality": "Bhopal",
+                "addressRegion": "Madhya Pradesh",
+                "addressCountry": "India"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/praveen-kumar-jayswal-7b532226b",
+                "https://github.com/Praveen-kumar625",
+                "https://www.hackerrank.com/profile/praveenpjayswal61"
+            ],
+            "image": "https://yourdomain.com/profile-image.jpg",
+            "description": "Full Stack Developer with expertise in Node.js, React, MongoDB, and AI/ML Research"
+        }
+    </script>
+
+    <!-- Additional Schema for Organization -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yourdomain.com"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://yourdomain.com#about"
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Skills",
+                "item": "https://yourdomain.com#skills"
+            }]
+        }
+    </script>
+
+    <title>Praveen Kumar Jayswal - Full Stack Developer & AI/ML Researcher | Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -23,15 +86,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <!-- AOS Animation Library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        :root {
+        
+         :root {
             --primary-color: #667eea;
             --secondary-color: #764ba2;
             --accent-color: #f093fb;
@@ -40,18 +103,18 @@
             --text-color: #333;
             --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-
+        
         html {
             scroll-behavior: smooth;
         }
-
+        
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--text-color);
             overflow-x: hidden;
         }
-
         /* ==================== NAVBAR ==================== */
+        
         .navbar {
             background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%);
             backdrop-filter: blur(10px);
@@ -61,7 +124,7 @@
             top: 0;
             z-index: 1000;
         }
-
+        
         .navbar-brand {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
@@ -69,11 +132,11 @@
             color: white !important;
             letter-spacing: 1px;
         }
-
+        
         .navbar-brand span {
             color: var(--accent-color);
         }
-
+        
         .nav-link {
             color: rgba(255, 255, 255, 0.8) !important;
             margin: 0 10px;
@@ -81,11 +144,11 @@
             font-weight: 500;
             transition: var(--transition);
         }
-
+        
         .nav-link:hover {
             color: white !important;
         }
-
+        
         .nav-link::after {
             content: '';
             position: absolute;
@@ -96,12 +159,12 @@
             background: var(--accent-color);
             transition: var(--transition);
         }
-
+        
         .nav-link:hover::after {
             width: 100%;
         }
-
         /* ==================== HERO SECTION ==================== */
+        
         .hero {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             min-height: 100vh;
@@ -111,7 +174,7 @@
             position: relative;
             overflow: hidden;
         }
-
+        
         .hero::before {
             content: '';
             position: absolute;
@@ -122,7 +185,7 @@
             top: -100px;
             right: -100px;
         }
-
+        
         .hero::after {
             content: '';
             position: absolute;
@@ -133,7 +196,7 @@
             bottom: -50px;
             left: -50px;
         }
-
+        
         .hero-content {
             position: relative;
             z-index: 2;
@@ -141,7 +204,7 @@
             color: white;
             max-width: 800px;
         }
-
+        
         .hero-title {
             font-family: 'Playfair Display', serif;
             font-size: 4rem;
@@ -149,25 +212,25 @@
             margin-bottom: 20px;
             animation: slideInDown 0.8s ease-out;
         }
-
+        
         .hero-subtitle {
             font-size: 1.5rem;
             margin-bottom: 15px;
             opacity: 0.95;
             animation: slideInUp 0.8s ease-out 0.2s backwards;
         }
-
+        
         .hero-tagline {
             font-size: 1.1rem;
             opacity: 0.8;
             margin-bottom: 40px;
             animation: slideInUp 0.8s ease-out 0.4s backwards;
         }
-
+        
         .hero-cta {
             animation: slideInUp 0.8s ease-out 0.6s backwards;
         }
-
+        
         .btn-primary-custom {
             background: linear-gradient(135deg, var(--accent-color) 0%, #f5576c 100%);
             border: none;
@@ -181,14 +244,14 @@
             box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
             margin: 0 10px;
         }
-
+        
         .btn-primary-custom:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(245, 87, 108, 0.6);
             color: white;
             text-decoration: none;
         }
-
+        
         .btn-secondary-custom {
             background: transparent;
             border: 2px solid white;
@@ -201,14 +264,14 @@
             transition: var(--transition);
             margin: 0 10px;
         }
-
+        
         .btn-secondary-custom:hover {
             background: white;
             color: var(--secondary-color);
             text-decoration: none;
         }
-
         /* ==================== ANIMATIONS ==================== */
+        
         @keyframes slideInDown {
             from {
                 opacity: 0;
@@ -219,7 +282,7 @@
                 transform: translateY(0);
             }
         }
-
+        
         @keyframes slideInUp {
             from {
                 opacity: 0;
@@ -230,7 +293,7 @@
                 transform: translateY(0);
             }
         }
-
+        
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -239,21 +302,22 @@
                 opacity: 1;
             }
         }
-
+        
         @keyframes pulse {
-            0%, 100% {
+            0%,
+            100% {
                 opacity: 1;
             }
             50% {
                 opacity: 0.7;
             }
         }
-
         /* ==================== GENERAL SECTIONS ==================== */
+        
         section {
             padding: 80px 0;
         }
-
+        
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 3rem;
@@ -263,7 +327,7 @@
             text-align: center;
             color: var(--text-color);
         }
-
+        
         .section-title::after {
             content: '';
             position: absolute;
@@ -275,12 +339,12 @@
             transform: translateX(-50%);
             border-radius: 2px;
         }
-
         /* ==================== ABOUT SECTION ==================== */
+        
         #about {
             background: var(--light-color);
         }
-
+        
         .about-card {
             background: white;
             padding: 40px;
@@ -290,18 +354,18 @@
             transition: var(--transition);
             border-left: 5px solid var(--primary-color);
         }
-
+        
         .about-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
         }
-
+        
         .about-text {
             font-size: 1.1rem;
             line-height: 1.8;
             color: #555;
         }
-
+        
         .about-highlight {
             background: linear-gradient(120deg, rgba(102, 126, 234, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
             padding: 25px;
@@ -309,7 +373,7 @@
             border-radius: 8px;
             margin: 20px 0;
         }
-
+        
         .profile-avatar {
             width: 200px;
             height: 200px;
@@ -324,17 +388,17 @@
             box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
             margin: 0 auto 30px;
         }
-
         /* ==================== EXPERIENCE SECTION ==================== */
+        
         #experience {
             background: white;
         }
-
+        
         .experience-timeline {
             position: relative;
             padding: 20px 0;
         }
-
+        
         .experience-timeline::before {
             content: '';
             position: absolute;
@@ -344,30 +408,41 @@
             height: 100%;
             background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
         }
-
+        
         .experience-item {
             margin-bottom: 50px;
             opacity: 0;
             animation: slideInUp 0.8s ease-out forwards;
         }
-
-        .experience-item:nth-child(1) { animation-delay: 0.1s; }
-        .experience-item:nth-child(2) { animation-delay: 0.2s; }
-        .experience-item:nth-child(3) { animation-delay: 0.3s; }
-        .experience-item:nth-child(4) { animation-delay: 0.4s; }
-
+        
+        .experience-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .experience-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .experience-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .experience-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
         .experience-item:nth-child(odd) {
             margin-left: 0;
             margin-right: 50%;
             padding-right: 40px;
         }
-
+        
         .experience-item:nth-child(even) {
             margin-left: 50%;
             margin-right: 0;
             padding-left: 40px;
         }
-
+        
         .experience-content {
             background: white;
             padding: 30px;
@@ -375,7 +450,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             position: relative;
         }
-
+        
         .experience-content::after {
             content: '';
             position: absolute;
@@ -387,51 +462,51 @@
             top: 40px;
             box-shadow: 0 0 0 4px white, 0 0 0 8px var(--primary-color);
         }
-
+        
         .experience-item:nth-child(odd) .experience-content::after {
             right: -60px;
         }
-
+        
         .experience-item:nth-child(even) .experience-content::after {
             left: -60px;
         }
-
+        
         .job-title {
             font-size: 1.4rem;
             font-weight: 700;
             color: var(--primary-color);
             margin-bottom: 10px;
         }
-
+        
         .company-name {
             font-size: 1.1rem;
             color: #666;
             margin-bottom: 5px;
         }
-
+        
         .job-duration {
             font-size: 0.9rem;
             color: #999;
             font-style: italic;
             margin-bottom: 15px;
         }
-
+        
         .job-description {
             color: #555;
             line-height: 1.7;
         }
-
         /* ==================== SKILLS SECTION ==================== */
+        
         #skills {
             background: var(--light-color);
         }
-
+        
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
-
+        
         .skill-card {
             background: white;
             padding: 30px;
@@ -441,12 +516,12 @@
             position: relative;
             overflow: hidden;
         }
-
+        
         .skill-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
         }
-
+        
         .skill-card::before {
             content: '';
             position: absolute;
@@ -456,7 +531,7 @@
             height: 4px;
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
         }
-
+        
         .skill-category-title {
             font-size: 1.4rem;
             font-weight: 700;
@@ -466,16 +541,16 @@
             align-items: center;
             gap: 10px;
         }
-
+        
         .skill-icon {
             font-size: 1.8rem;
             color: var(--accent-color);
         }
-
+        
         .skill-list {
             list-style: none;
         }
-
+        
         .skill-list li {
             padding: 8px 0;
             color: #555;
@@ -484,11 +559,11 @@
             position: relative;
             padding-left: 25px;
         }
-
+        
         .skill-list li:last-child {
             border-bottom: none;
         }
-
+        
         .skill-list li::before {
             content: '✓';
             position: absolute;
@@ -497,17 +572,17 @@
             font-weight: bold;
             font-size: 1.2rem;
         }
-
+        
         .skill-list li:hover {
             color: var(--primary-color);
             padding-left: 30px;
         }
-
         /* ==================== EDUCATION SECTION ==================== */
+        
         #education {
             background: white;
         }
-
+        
         .education-item {
             background: white;
             padding: 30px;
@@ -517,45 +592,45 @@
             border-left: 5px solid var(--primary-color);
             transition: var(--transition);
         }
-
+        
         .education-item:hover {
             transform: translateX(10px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
         }
-
+        
         .school-name {
             font-size: 1.3rem;
             font-weight: 700;
             color: var(--text-color);
             margin-bottom: 8px;
         }
-
+        
         .degree {
             font-size: 1.1rem;
             color: var(--primary-color);
             margin-bottom: 8px;
             font-weight: 600;
         }
-
+        
         .education-date {
             font-size: 0.95rem;
             color: #999;
             margin-bottom: 15px;
         }
-
+        
         .education-description {
             color: #555;
             line-height: 1.7;
         }
-
         /* ==================== CONTACT SECTION ==================== */
+        
         #contact {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
             position: relative;
             overflow: hidden;
         }
-
+        
         #contact::before {
             content: '';
             position: absolute;
@@ -566,7 +641,7 @@
             top: -100px;
             right: -100px;
         }
-
+        
         #contact::after {
             content: '';
             position: absolute;
@@ -577,19 +652,19 @@
             bottom: -50px;
             left: -50px;
         }
-
+        
         .contact-content {
             position: relative;
             z-index: 2;
         }
-
+        
         .contact-item {
             margin-bottom: 30px;
             display: flex;
             align-items: center;
             gap: 20px;
         }
-
+        
         .contact-icon {
             width: 60px;
             height: 60px;
@@ -601,24 +676,24 @@
             font-size: 1.5rem;
             flex-shrink: 0;
         }
-
+        
         .contact-info h4 {
             font-size: 1.2rem;
             margin-bottom: 5px;
         }
-
+        
         .contact-info p {
             opacity: 0.95;
             margin: 0;
         }
-
+        
         .contact-links {
             display: flex;
             gap: 15px;
             margin-top: 30px;
             flex-wrap: wrap;
         }
-
+        
         .social-link {
             width: 50px;
             height: 50px;
@@ -633,26 +708,26 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             text-decoration: none;
         }
-
+        
         .social-link:hover {
             background: white;
             color: var(--secondary-color);
             transform: translateY(-5px);
             border-color: white;
         }
-
         /* ==================== FOOTER ==================== */
+        
         footer {
             background: var(--dark-color);
             color: white;
             padding: 40px 0 20px;
             text-align: center;
         }
-
+        
         .footer-content {
             margin-bottom: 25px;
         }
-
+        
         .footer-links {
             display: flex;
             gap: 30px;
@@ -660,31 +735,28 @@
             margin-bottom: 25px;
             flex-wrap: wrap;
         }
-
+        
         .footer-links a {
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             transition: var(--transition);
         }
-
+        
         .footer-links a:hover {
             color: var(--accent-color);
         }
-
         /* ==================== RESPONSIVE DESIGN ==================== */
+        
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2.5rem;
             }
-
             .section-title {
                 font-size: 2rem;
             }
-
             .experience-timeline::before {
                 left: 0;
             }
-
             .experience-item:nth-child(odd),
             .experience-item:nth-child(even) {
                 margin-left: 0;
@@ -692,29 +764,25 @@
                 padding-left: 40px;
                 padding-right: 0;
             }
-
             .experience-item:nth-child(odd) .experience-content::after,
             .experience-item:nth-child(even) .experience-content::after {
                 left: -30px;
                 right: auto;
             }
-
             .btn-primary-custom,
             .btn-secondary-custom {
                 margin: 10px 5px;
                 padding: 12px 30px;
             }
-
             .skills-grid {
                 grid-template-columns: 1fr;
             }
-
             .contact-links {
                 justify-content: center;
             }
         }
-
         /* ==================== SCROLL TO TOP ==================== */
+        
         .scroll-to-top {
             position: fixed;
             bottom: 30px;
@@ -735,25 +803,25 @@
             z-index: 999;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
         }
-
+        
         .scroll-to-top.show {
             opacity: 1;
             visibility: visible;
         }
-
+        
         .scroll-to-top:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-
         /* ==================== UTILITIES ==================== */
+        
         .text-gradient {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
+        
         .divider {
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
@@ -761,6 +829,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- ==================== NAVBAR ==================== -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -807,8 +876,9 @@
                 </div>
                 <div class="col-lg-8" data-aos="fade-left">
                     <div class="about-card">
-                        <p class="about-text">I'm a passionate full-stack developer with expertise in building scalable web applications using modern technologies. With a strong foundation in computer science and hands-on experience at leading companies like Microsoft and Upwork, I bring innovation and technical excellence to every project.</p>
-                        
+                        <p class="about-text">I'm a passionate full-stack developer with expertise in building scalable web applications using modern technologies. With a strong foundation in computer science and hands-on experience at leading companies like Microsoft and
+                            Upwork, I bring innovation and technical excellence to every project.</p>
+
                         <div class="about-highlight">
                             <strong><i class="bi bi-lightning"></i> Key Strengths:</strong><br>
                             <small>Frontend: React, Redux, TypeScript | Backend: Node.js, Express.js, Java, Spring | Databases: MongoDB, MySQL | APIs: REST, GraphQL | DevOps & Cloud Technologies</small>
@@ -1064,7 +1134,8 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="divider"></div>
-            <p>&copy; 2025 Praveen Kumar Jayswal. All rights reserved. | <a href="https://www.linkedin.com/in/praveen-kumar-jayswal-7b532226b" target="_blank" style="color: var(--accent-color); text-decoration: none;">LinkedIn</a> | <a href="https://github.com/Praveen-kumar625" target="_blank" style="color: var(--accent-color); text-decoration: none;">GitHub</a></p>
+            <p>&copy; 2025 Praveen Kumar Jayswal. All rights reserved. | <a href="https://www.linkedin.com/in/praveen-kumar-jayswal-7b532226b" target="_blank" style="color: var(--accent-color); text-decoration: none;">LinkedIn</a> | <a href="https://github.com/Praveen-kumar625"
+                    target="_blank" style="color: var(--accent-color); text-decoration: none;">GitHub</a></p>
         </div>
     </footer>
 
@@ -1077,7 +1148,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <!-- AOS Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
+
     <script>
         // Initialize AOS
         AOS.init({
@@ -1113,7 +1184,7 @@
                     const navbarHeight = navbar.offsetHeight;
                     const element = document.querySelector(href);
                     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-                    
+
                     window.scrollTo({
                         top: elementPosition - navbarHeight,
                         behavior: 'smooth'
@@ -1132,7 +1203,7 @@
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section');
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
@@ -1150,4 +1221,5 @@
         });
     </script>
 </body>
+
 </html>
